@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="img/duck.png" width="50" height="50" class="d-inline-block align-middle" alt=""></a>
+        <a class="navbar-brand text-light" href="#">Catalogo Libri</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item ">
+              <a class="nav-link active text-white-50" aria-current="page" href="#">Anagrafica Utenti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="#">Storico Prestiti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="#">Help</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-light" type="submit">Cerca</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col col-12 col-lg-9">
+          <div class="row">
+            <div class="col col-lg-9">
+
+              <h2>Catalogo Libri</h2>
+            </div>
+            <div class="col col-lg-3 d-flex justify-content-end align-middle">
+
+              <button type="button" class="btn btn-primary btn.sm">Aggiungi Libro</button>
+            </div>
+          </div>
+          <table class="table table-striped mt-5">
+            <thead>
+              <tr>
+                <th scope="col" class="col-5">Titolo</th>
+                <th scope="col" class="col-2">Data Prestito</th>
+                <th scope="col" class="col-3">Stato</th>
+                <th scope="col" class="col-2 d-flex flex-row">Azioni</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">I pilastri della terra</td>
+                <td>-</td>
+                <td>
+                  <span class="badge text-bg-success">Disponibile</span>
+                </td>
+                <td>
+                  <i class="fa-solid fa-pencil text-secondary p-2 border border-secondary border-2 rounded"></i>
+
+                  <i class="fa-solid fa-trash text-secondary p-2 border border-secondary border-2 rounded"></i>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+        <div class="col">
+
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
+</html>
