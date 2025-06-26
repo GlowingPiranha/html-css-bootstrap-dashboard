@@ -51,25 +51,75 @@
 
   <main>
     <div class="container">
-      <div class="row my-4">
+      <div class="row my-5">
         <h2>Nuovo Libro</h2>
-        <div class="col-12">
-          <form method="post">
-            <div class="text-form">
-              <label for="nome-autore" class="form-label col-6">Nome Autore</label>
-              <label for="cognome-autore" class="form-label ">Cognome Autore</label>
+        <div class="col-12 mt-3">
+          <div class="row g-3">
+            <div class="col">
+              <label for="nome-autore" class="fs-5 mb-2">Nome Autore</label>
+              <input type="text" id="nome-autore" class="form-control" placeholder="Inserisci il nome dell'autore"
+                aria-label="First name">
             </div>
-            <div class="input-group gap-5">
-              <input type="text" id="nome-autore" class="form-control rounded"
-                placeholder="Inserisci il nome dell'autore" required>
-              <input type="text" id="cognome-autore" class="form-control rounded"
-                placeholder="Inserisci il cognome dell'autore" required>
+            <div class="col">
+              <label for="cognome-autore" class="fs-5 mb-2">Cognome Autore</label>
+              <input type="text" id="cognome-autore" class="form-control" placeholder="Inserisci il cognome dell'autore"
+                aria-label="Last name">
             </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col">
+              <label for="titolo" class="fs-5 mb-2">Titolo</label>
+              <input type="text" id="titolo" class="form-control" placeholder="Inserisci il titolo del libro"
+                aria-label="title">
+              <div class="form-text">Titolo versione italiana</div>
+            </div>
+          </div>
+          <div class="row mt-3 g-3 gap-4">
+            <div class="col col-12 col-md-3">
+              <label for="" class="fs-5 mb-2">Genere</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Scegli il genere</option>
+                <option value="1">Horror</option>
+                <option value="2">Commedia</option>
+                <option value="3">Fantasy</option>
+              </select>
+            </div>
+            <div class="col col-12 col-md-4">
+              <label for="" class="fs-5 mb-2">Anno di Pubblicazione</label>
+              <input type="text" class="form-control" placeholder="Inserisci l'anno">
+            </div>
+            <div class="col col-12 col-md-4">
+              <label for="" class="fs-5 mb-2">ISBN#</label>
+              <input type="text" class="form-control" placeholder="Inserisci il codice ISBN#">
+            </div>
+          </div>
+          <hr class="my-5">
+          <div class="row">
+            <div class="col">
+              <label for="" class="fs-5 mb-2">Note</label>
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                  style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Inserisci eventuali note sul libro</label>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                <label class="form-check-label fs-6" for="checkDefault">
+                  Disponibile anche in digitale
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mt-3">
+            <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
+          </div>
         </div>
 
       </div>
-
-    </div>
 
 
   </main>
